@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio com Flexbox</title>
+
+    <!--O flex-container é a classe que possui a div principai e dentro estão os itens que são os filhos-->
+    <!--o display flex  automaticamente o alinhou em colunas, sem ele automaticamente as colunas estão alinhados (por causa da div), mas as posições dos elementos (parte do mapa) estão desorganizadas-->
+
+    <style>
+        .flex-container {
+            font-size: 0px;
+            width: 30%;
+            height: auto;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mapa Mundi com Flexbox</h1>
+
+    <!--Div principai (pai)-->
+    <!--Div principai é um container-->
+    <div class="flex-container">
+        <!--subdiv (filhos/dentro da div principal)-->
+        <!--Cada filho(div) possui 3 partes do mapa -->
+        <!--Cada filho(div) representa uma coluna -->
+        <div>
+            <img src="ImegensMapas/mapa03.png" alt="">
+            <img src="ImegensMapas/mapa09.png" alt="">
+            <img src="ImegensMapas/mapa06.png" alt="">
+        </div>
+        <div>
+            <img src="ImegensMapas/mapa07.png" alt="">
+            <img src="ImegensMapas/mapa01.png" alt="">
+            <img src="ImegensMapas/mapa02.png" alt="">
+        </div>
+        <div>
+            <img src="ImegensMapas/mapa05.png" alt="">
+            <img src="ImegensMapas/mapa08.png" alt="">
+            <img src="ImegensMapas/mapa04.png" alt="">
+        </div>
+
+    </div>
+</body>
+
+</html>
